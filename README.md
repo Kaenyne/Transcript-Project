@@ -65,13 +65,37 @@ High-volume YouTube channels are the one thing that needs tuning. Bloomberg
 posts ~40 clips a day; `include` + `max_per_run` cuts that to the 3 real
 programmes.
 
+### The one real limitation
+
+YouTube's channel feed returns **only the 15 most recent uploads, with no
+paging**. For a channel posting 40 videos a day, a weekly run physically
+cannot see the whole week — Bloomberg's 15 newest videos are all from *today*.
+
+The pull stage detects this and warns by name rather than silently dropping
+episodes:
+
+```
+WARNING Bloomberg Television: feed is capped at 15 items and its oldest entry
+(2026-07-22) is still inside your 7-day window — some uploads were missed.
+```
+
+If you see that, either run more often or accept partial coverage of that
+channel. Podcast RSS feeds carry full back catalogues and are unaffected.
+
 ## Spotify, honestly
 
-Spotify's API gives episode metadata but **never audio and never transcripts**.
-A `spotify:` entry works by reading the show's public title and re-finding it
-on Apple to get the RSS feed. If the show is a **Spotify exclusive there is no
-feed and it cannot be pulled** — the resolver will tell you so by name. Use
-Spotify links for convenience, not as a content source.
+**This project never calls the Spotify API, deliberately.** As of the February
+2026 platform changes, Spotify Developer Mode requires a **Premium
+subscription**, allows one Client ID, caps search results at 10, and removed
+the batch show/episode endpoints. It has never had a transcript endpoint or
+full-episode audio. It is strictly worse than the free, keyless iTunes lookup.
+
+A `spotify:` entry therefore works without any API or credentials: it reads the
+show's public page title and re-finds the show on Apple to get the RSS feed.
+
+If a show is a **Spotify exclusive there is no feed and it cannot be pulled** —
+the resolver says so by name. That tail is shrinking anyway (Rogan, Gimlet and
+Call Her Daddy all went cross-platform). Mark those unavailable and move on.
 
 ## State
 
@@ -88,4 +112,8 @@ pip install -r requirements.txt
 python run.py sources
 ```
 
-Stage 2 additionally needs `ffmpeg` on PATH — not installed on this machine yet.
+**No API keys, and no `ffmpeg`.** Stage 2 can stay dependency-free too:
+`faster-whisper` decodes audio via bundled PyAV rather than a system ffmpeg,
+podcast enclosures are already MP3, and YouTube audio can be saved in its
+native format without transcoding. Install ffmpeg only if you later want
+`yt-dlp`'s conversion options.

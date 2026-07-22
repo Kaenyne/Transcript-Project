@@ -5,5 +5,6 @@ PyYAML>=6.0.2             # sources.yaml
 youtube-transcript-api>=1.2.0   # YouTube captions (1.x instance API)
 
 # --- Stage 2: transcription (uncomment when you get there) ---
-# yt-dlp>=2026.1.1        # audio download + fallback caption extraction
-# faster-whisper>=1.1.0   # local ASR; also needs ffmpeg on PATH
+# yt-dlp>=2026.1.1        # audio download; caption fallback only
+# faster-whisper>=1.2.0   # local ASR — decodes via bundled PyAV, NO ffmpeg needed
+# groq                    # optional: ~$0.04/hr cloud ASR instead of waiting on CPU

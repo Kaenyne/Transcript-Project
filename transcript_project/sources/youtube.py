@@ -76,7 +76,39 @@ def fetch(
             )
         )
 
+    _warn_on_overflow(source, parsed.entries, cutoff)
     return episodes
+
+
+# The channel feed returns at most this many uploads and offers no paging.
+FEED_ITEM_CAP = 15
+
+
+def _warn_on_overflow(source: Source, entries, cutoff: datetime) -> None:
+    """Detect the case where the feed truncated away episodes we wanted.
+
+    If the *oldest* video in a full feed is still newer than our cutoff, then
+    the window we asked for extends past the end of the feed and there are
+    almost certainly uploads we never saw. Silent data loss otherwise — this
+    only bites busy channels, which are exactly the ones you'd not notice.
+    """
+    if len(entries) < FEED_ITEM_CAP:
+        return  # feed wasn't truncated; we saw everything
+
+    oldest = min(
+        (d for d in (_parse_date(e) for e in entries) if d is not None),
+        default=None,
+    )
+    if oldest is not None and oldest > cutoff:
+        log.warning(
+            "%s: feed is capped at %d items and its oldest entry (%s) is still "
+            "inside your %d-day window — some uploads were missed. "
+            "Fix: lower max_age_days, or run more often.",
+            source.name,
+            FEED_ITEM_CAP,
+            oldest.date(),
+            source.max_age_days,
+        )
 
 
 def fetch_captions(video_id: str, languages: tuple[str, ...] = ("en",)) -> str | None:
