@@ -1,0 +1,68 @@
+# ============================================================================
+# YOUR SOURCE LIST — this is the file you edit every week.
+# ============================================================================
+#
+# Four ways to add something. Use the laziest one that works:
+#
+#   - podcast: "Odd Lots"          <- just the name; resolved to an RSS feed
+#   - rss:     "https://..."       <- explicit feed URL; most reliable
+#   - youtube: "@Bloomberg"        <- handle, /channel/ URL, or channel_id
+#   - spotify: "https://open.spotify.com/show/..."   <- resolved to RSS if the
+#                                                      show is not exclusive
+#
+# Optional keys on any entry:
+#   name:      override the display name used in reports
+#   max_age_days: only pull episodes newer than this (default: see defaults)
+#   priority:  high | normal | low   (high = always transcribe, low = only if
+#              a free transcript already exists — keeps your ASR bill down)
+#   skip_if_longer_than_minutes: guard against 5-hour episodes
+#   tags:      [macro, ai]  — used to group the weekly report into sections
+#
+# Comment a line out with '#' to pause a source without deleting it.
+# ============================================================================
+
+defaults:
+  max_age_days: 8          # a weekly run with one day of slack
+  priority: normal
+  skip_if_longer_than_minutes: 240
+  exclude:                 # regex, case-insensitive, matched against the title
+    - "#shorts"
+    - "\\bshorts\\b"
+
+sources:
+  # ---------------------------------------------------------------- podcasts
+  - podcast: "Odd Lots"
+    tags: [macro, markets]
+    priority: high
+
+  - podcast: "Invest Like the Best"
+    tags: [investing]
+
+  - podcast: "Dwarkesh Podcast"
+    tags: [ai]
+    priority: high
+
+  # Explicit RSS is the most reliable form — no lookup step, never ambiguous.
+  # - rss: "https://feeds.megaphone.fm/example"
+  #   name: "Some Show"
+  #   tags: [markets]
+
+  # ---------------------------------------------------------------- youtube
+  - youtube: "@markets"
+    name: "Bloomberg Television"
+    tags: [macro]
+    priority: low          # high volume; only grab ones with free captions
+    max_age_days: 7
+    max_per_run: 5         # this channel posts dozens of clips a day
+    include:               # ...so keep only the long-form programmes
+      - "Surveillance"
+      - "Open Interest"
+      - "Big Take"
+
+  # - youtube: "@AllInPodcast"
+  #   tags: [tech, markets]
+
+  # ---------------------------------------------------------------- spotify
+  # Spotify links work only if the show also publishes an open RSS feed.
+  # Spotify-exclusive shows cannot be pulled — see README.
+  # - spotify: "https://open.spotify.com/show/xxxxxxxxxxxxx"

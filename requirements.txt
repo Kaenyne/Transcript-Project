@@ -1,0 +1,9 @@
+# --- Stage 1: pulling sources (all that's needed today) ---
+feedparser>=6.0.11        # RSS/Atom parsing, tolerant of broken feeds
+requests>=2.32.0
+PyYAML>=6.0.2             # sources.yaml
+youtube-transcript-api>=1.2.0   # YouTube captions (1.x instance API)
+
+# --- Stage 2: transcription (uncomment when you get there) ---
+# yt-dlp>=2026.1.1        # audio download + fallback caption extraction
+# faster-whisper>=1.1.0   # local ASR; also needs ffmpeg on PATH

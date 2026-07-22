@@ -1,0 +1,20 @@
+# Secrets
+.env
+
+# Local data — audio is big, transcripts/reports are regenerable
+data/audio/
+data/transcripts/
+data/reports/
+state.json
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+
+# OS
+Thumbs.db
+.DS_Store
