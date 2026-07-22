@@ -1,0 +1,6 @@
+# Local ASR model weights (downloaded at runtime, not part of the deliverable)
+models/
+# Source audio and working copy
+audio.mp3
+*.mp3
+transcribe.log
