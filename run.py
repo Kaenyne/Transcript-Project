@@ -26,6 +26,31 @@ from transcript_project.sources import resolve
 from transcript_project.state import State
 
 ROOT = Path(__file__).parent
+
+
+def _load_env(path: Path = None) -> None:
+    """Read KEY=VALUE lines from .env into the environment.
+
+    Hand-rolled rather than pulling in python-dotenv: it's a dozen lines, and
+    the only secret this project ever needs is GROQ_API_KEY. Real environment
+    variables always win, so a shell export overrides the file.
+    """
+    path = path or ROOT / ".env"
+    if not path.exists():
+        return
+    import os
+
+    for line in path.read_text(encoding="utf-8").splitlines():
+        line = line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        key, _, value = line.partition("=")
+        key = key.strip()
+        value = value.strip().strip("'\"")
+        if key and key not in os.environ:
+            os.environ[key] = value
+
+
 SOURCES_FILE = ROOT / "sources.yaml"
 STATE_FILE = ROOT / "state.json"
 MANIFEST_FILE = ROOT / "data" / "last_pull.json"
@@ -34,6 +59,22 @@ MANIFEST_FILE = ROOT / "data" / "last_pull.json"
 def cmd_pull(args: argparse.Namespace) -> int:
     sources = load_sources(SOURCES_FILE)
     state = State(STATE_FILE)
+
+    # Backfill support: normally every source is pulled over its configured
+    # window, but --source/--max-age-days let you reach back into one show's
+    # archive without editing sources.yaml and having to remember to undo it.
+    if args.source:
+        needle = args.source.lower()
+        sources = [s for s in sources if needle in s.id or needle in s.name.lower()]
+        if not sources:
+            print(f"No source matches {args.source!r}.", file=sys.stderr)
+            return 2
+
+    for s in sources:
+        if args.max_age_days is not None:
+            s.max_age_days = args.max_age_days
+        if args.max_episodes is not None:
+            s.max_per_run = args.max_episodes
 
     print(f"Pulling {len(sources)} source(s)...\n")
     result = pull_all(sources, state)
@@ -127,6 +168,13 @@ def main() -> int:
 
     p = sub.add_parser("pull", help="find new episodes")
     p.add_argument("--dry-run", action="store_true")
+    p.add_argument("--source", help="only pull sources matching this id or name")
+    p.add_argument(
+        "--max-age-days", type=int, help="override how far back to look (backfill)"
+    )
+    p.add_argument(
+        "--max-episodes", type=int, help="cap how many episodes to take per source"
+    )
     p.set_defaults(func=cmd_pull)
 
     t = sub.add_parser("transcribe", help="get text for pulled episodes")
@@ -152,6 +200,7 @@ def main() -> int:
     sub.add_parser("status", help="pipeline status").set_defaults(func=cmd_status)
 
     args = parser.parse_args()
+    _load_env()
 
     # Windows consoles default to cp1252, which raises on the em-dashes and
     # smart quotes that are everywhere in episode titles.
