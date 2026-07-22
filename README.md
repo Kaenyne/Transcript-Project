@@ -8,6 +8,7 @@ Run it whenever you want a digest. Nothing is scheduled or autonomous.
 ```
 python run.py sources      # check every source in sources.yaml resolves
 python run.py pull         # find new episodes since last run
+python run.py transcribe   # get text for them
 python run.py status       # what's pending in the pipeline
 ```
 
@@ -36,8 +37,59 @@ downloading anything.
 ## Stage status
 
 - [x] **1. Pull sources** — RSS + YouTube, resolution, dedup, filtering
-- [ ] **2. Transcribe** — fetch free transcripts; ASR only for the remainder
+- [x] **2. Transcribe** — free transcripts first, ASR only for the remainder
 - [ ] **3. Summarize** — per-episode notes + a combined weekly report
+
+## Stage 2: the transcript ladder
+
+Each episode walks down this list and stops at the first rung that yields
+usable text (≥120 words — below that we assume an error page and keep going):
+
+| Rung | Source | Cost |
+|---|---|---|
+| 1 | `<podcast:transcript>` already in the feed | free, instant |
+| 2 | YouTube caption track | free, instant |
+| 3 | speech recognition on the audio | slow or paid |
+
+```
+python run.py transcribe                  # free transcripts + local ASR
+python run.py transcribe --free-only      # never run ASR; just the free ones
+python run.py transcribe --stt groq       # same model, ~100x faster, ~$0.04/hr
+python run.py transcribe --limit 3        # work through the queue in batches
+python run.py transcribe --model small    # trade accuracy for speed
+```
+
+Output goes to `data/transcripts/<uid>.md` with YAML front matter recording
+**`transcript_origin`** — publisher transcript, auto-captions and ASR have very
+different error profiles, and stage 3 should know which it's reading.
+
+Sources marked `priority: low` are skipped at rung 3 rather than transcribed:
+you follow them for breadth, and they aren't worth the CPU time or the spend.
+
+### local vs groq
+
+Both run **the same model** (`whisper-large-v3-turbo`), so the flag changes
+cost and speed but not the character of the output — which is the point. Local
+is the default and needs no key; Groq is for weeks when the queue is too long
+to wait on CPU.
+
+Groq caps uploads at 25 MB, so audio is downsampled to 16 kHz mono MP3 (~14
+MB/hour, no accuracy cost for speech) and split if still too large. All of that
+runs through PyAV — **no ffmpeg required**. Set `GROQ_API_KEY` to use it.
+
+Measured on this machine (CPU, `int8`, a 55-minute episode):
+
+| | Speed | 12-episode week (~11 hrs audio) |
+|---|---|---|
+| local `large-v3-turbo` | **1.68× realtime** | ~6.5 hrs — an overnight run |
+| groq `whisper-large-v3-turbo` | ~100× realtime | ~7 min, ~$0.45 |
+
+Compression took that episode from 55.5 MB to 13.9 MB, so most episodes reach
+Groq in a single request and never need splitting.
+
+Don't use `--model tiny` for real runs. It's ~10× faster but mangles exactly
+what you care about — it rendered "Patrick O'Shaughnessy" as "Patrick
+O'Shanasi". It's there for testing the plumbing.
 
 ## Editing `sources.yaml`
 

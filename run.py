@@ -1,10 +1,13 @@
 #!/usr/bin/env python
 """Entry point for the weekly run.
 
-    python run.py pull              # find new episodes (stage 1)
-    python run.py pull --dry-run    # ...without recording them as seen
-    python run.py sources           # check every source resolves
-    python run.py status            # what's pending in the pipeline
+    python run.py pull                    # find new episodes (stage 1)
+    python run.py pull --dry-run          # ...without recording them as seen
+    python run.py transcribe              # get text for them (stage 2)
+    python run.py transcribe --free-only  # ...skipping anything needing ASR
+    python run.py transcribe --stt groq   # ...using cloud ASR instead of CPU
+    python run.py sources                 # check every source resolves
+    python run.py status                  # what's pending in the pipeline
 """
 
 from __future__ import annotations
@@ -78,6 +81,36 @@ def cmd_sources(args: argparse.Namespace) -> int:
     return 1 if failed else 0
 
 
+def cmd_transcribe(args: argparse.Namespace) -> int:
+    from transcript_project import asr
+    from transcript_project.transcribe import format_report, transcribe_pending
+
+    state = State(STATE_FILE)
+    pending = state.pending("transcribed")
+    if not pending:
+        print("Nothing pending. Run `python run.py pull` first.")
+        return 0
+
+    free_only = args.free_only
+    backend = None if free_only else asr.get_backend(args.stt, model=args.model)
+
+    n = len(pending) if args.limit is None else min(args.limit, len(pending))
+    mode = "free transcripts only" if free_only else f"free + {args.stt} ASR"
+    print(f"Transcribing {n} of {len(pending)} pending ({mode})...\n")
+
+    result = transcribe_pending(
+        state,
+        out_dir=ROOT / "data" / "transcripts",
+        audio_dir=ROOT / "data" / "audio",
+        backend=backend,
+        limit=args.limit,
+        allow_asr=not free_only,
+    )
+    state.save()
+    print(format_report(result))
+    return 1 if result.failed else 0
+
+
 def cmd_status(args: argparse.Namespace) -> int:
     state = State(STATE_FILE)
     last = state.last_run
@@ -95,6 +128,25 @@ def main() -> int:
     p = sub.add_parser("pull", help="find new episodes")
     p.add_argument("--dry-run", action="store_true")
     p.set_defaults(func=cmd_pull)
+
+    t = sub.add_parser("transcribe", help="get text for pulled episodes")
+    t.add_argument(
+        "--stt",
+        choices=["local", "groq"],
+        default="local",
+        help="ASR backend for episodes with no free transcript (default: local)",
+    )
+    t.add_argument(
+        "--free-only",
+        action="store_true",
+        help="only fetch transcripts that already exist; never run ASR",
+    )
+    t.add_argument("--limit", type=int, help="process at most N episodes")
+    t.add_argument(
+        "--model",
+        help="override the ASR model (e.g. 'tiny' or 'small' to trade accuracy for speed)",
+    )
+    t.set_defaults(func=cmd_transcribe)
 
     sub.add_parser("sources", help="verify sources.yaml").set_defaults(func=cmd_sources)
     sub.add_parser("status", help="pipeline status").set_defaults(func=cmd_status)

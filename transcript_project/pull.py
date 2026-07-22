@@ -60,12 +60,18 @@ def pull_all(sources: list[Source], state: State) -> PullResult:
                 # Feed is newest-first, so we keep the most recent N and stop.
                 result.skipped_capped += 1
                 continue
+            # Store the whole record, not a summary of it: later stages run in
+            # separate invocations and must not depend on the last pull's
+            # manifest still being around.
             state.mark_seen(
                 ep.uid,
                 stage="pulled",
+                episode=ep.to_dict(),
                 title=ep.title,
                 show=ep.show,
                 source_id=ep.source_id,
+                tags=source.tags,
+                priority=source.priority,
                 published=ep.published.isoformat() if ep.published else None,
                 has_free_transcript=ep.has_free_transcript,
             )

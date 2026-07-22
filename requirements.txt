@@ -1,10 +1,17 @@
-# --- Stage 1: pulling sources (all that's needed today) ---
+# --- Stage 1: pulling sources ---
 feedparser>=6.0.11        # RSS/Atom parsing, tolerant of broken feeds
 requests>=2.32.0
 PyYAML>=6.0.2             # sources.yaml
 youtube-transcript-api>=1.2.0   # YouTube captions (1.x instance API)
 
-# --- Stage 2: transcription (uncomment when you get there) ---
-# yt-dlp>=2026.1.1        # audio download; caption fallback only
-# faster-whisper>=1.2.0   # local ASR — decodes via bundled PyAV, NO ffmpeg needed
-# groq                    # optional: ~$0.04/hr cloud ASR instead of waiting on CPU
+# --- Stage 2: transcription ---
+# faster-whisper decodes audio through bundled PyAV, so NO system ffmpeg is
+# needed — for downloading, compressing, or chunking.
+faster-whisper>=1.2.0
+
+# Only needed if a YouTube video has captions disabled, so we must fall back
+# to downloading its audio. Podcast audio comes straight from the RSS enclosure.
+yt-dlp>=2026.1.1
+
+# --- Optional: cloud ASR (~$0.04/hr, same model as local) ---
+# groq
