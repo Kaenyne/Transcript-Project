@@ -1,0 +1,557 @@
+Transcript of 41f6d6f0-CHTAL4702481073.mp3
+Duration: 55:16 | Language: English (auto-detected)
+Generated with faster-whisper (base model). Auto-transcription may contain errors,
+especially with names, jargon, and overlapping speech.
+========================================================================
+
+My mayor Muslim, my bagel Jewish models are alive.
+Nixon five. Welcome.
+Excuse you. Welcome to model talk here with Jasmine Sun, Nathan Lambert as well as special as that.
+You haven't seen the name of mandates, the sub stacked as well as text QL, a startup.
+I think we're going to start with some anthropic hate from Nathan.
+They're giving us a GI for $200 a month, but that's not enough for you, is it?
+Well, it's a trajectory.
+Yeah, it's a trajectory.
+So like, Claude Fable is in your prescription plans for two weeks until they decide if you will only have to pay more, which means mostly only enterprises get access to it.
+And they are claiming that almost all of their decision making is for safety while doing things that actively undermine their users, which to their credit, they have walked back this policy.
+But a lot of trust has been burnt by them telling people that they're doing this undermining of the users for safety while they have three much more simple safety mechanisms released with the model.
+So my question is like, why do they think this is acceptable to release if safety is the top-wide priority relative to anything else is like they're not, they're not doing it fully.
+They literally felt some pressure to get this out.
+And then also the whole AI research community has turned against them because they no longer feel like Claude is a platform that they can rely upon as the future thing of their work.
+Like I described it as this year as I'm in the last six months figuring out how to change all of my workflows to work with agents.
+And I think Claude is easier to work with on the broad set of tasks that I do where codex is probably a bit better ready code.
+But it's like, if a drop link is going to make it so I have to Swiss cheese their classifier to get it to work on my editing my paper reviewing my code base or my ideas.
+I can't just realize this is a long term partner and I think this is still the case despite the change.
+I think there's a few weeks of understanding how the safety filter works, but they've told me they intend to restrict access to other AI researchers because they think they are the only people that could do safe AI research, which I think is categorically an error on how safety exists.
+Like safety is by a broad set of people having no financial incentives to eat their own bullshit and agreeing that the broader AI system is safe.
+So I would be shocked if I'm the only anthropocator on this call for that.
+Like I don't hate the people in a traffic. I just think that they've been the leadership is very bought into their mentality and then they are keeping to turn up the temperature where it seems like they feel personally responsible for fighting all these fights for the AI community.
+But their idea their conception of the AI community is very narrow around themselves.
+And for whatever reason, they don't seem to be asking for help or they say they could slow down, they can slow down these releases and get them more right.
+Oh, no one's going to defend me.
+Somebody get defend in the topic.
+Do you feel like they're personally offended like to this effect or do you just feel like they're doing so it's like a like a how dare you how dare they be like high and mighty.
+Like in the way that they're both like I can't.
+You didn't see the Nathan Lambert in the model spec.
+We want him not to be able to do it.
+I think both.
+It's just like I've worried about concentration of power for a long time in AI.
+And there's a prevailing sentiment that they're dropping because the furthest log in this, but there's a sentiment on other frontier labs that they will be the only people who can do certain types of science.
+They're the only people with the inference compute and the compute in the smartest models are the only things that are needed to make scientific progress.
+And these are all horrible ideas.
+It's like you're doing research and development internal to these companies by what it called scientific progress.
+If it's just dictated by one private company's whims.
+They're consistent with like how they how they behave or like their actions are completely consistent with like what they believe, which I guess is like hard to hard to hate on because like like it.
+I think it's a hate on it is a bad for society.
+But it is internally consistent and I like I commend them for like being true to their virtues, but they're walking of a path of fire to government striking them down.
+I mean, Nathan, like if we if we live in the world where we get wonderful scientific breakthroughs and cure cancer and productivity goes up and we're all rich.
+But it's like only brought to you by black boxes in frontier companies.
+And like we end up where this sort of like worst worst case scenario safety pathways are we we don't fall into like is that not okay.
+Or maybe like what's the like that happening?
+What I think the government would just be like we own you.
+If the entire economy is one company, I think the government would also be like you are now a government company.
+Let alone though like obvious.
+AGI is the most powerful technology. They love to compare it to enriching uranium and nukes and telling everybody that you're building the strongest weapon in a private company with little governance.
+The government already was upset about this, but I think economically the government would take action just against the model as well.
+Yeah, I think they a lot of people are anthropic including the leadership have always been open to nationalization or soft nationalization.
+And I think that outsiders sometimes underestimate the extent to which like nationalization is not necessarily an undesirable outcome.
+I think they care about what that looks like and how it works and who the administration is.
+Like I think most people are anthropic really don't want the Trump admin in particular to have that much control over them, but I think it goes back and forth.
+Oh, I know. I mean this is so so to be clear, like I'm closer to Nathan's side on this debate.
+We're like the reason that I don't like a world where like yeah, we have utopia, but anthropic is the sole provider of that utopia is the same reason I don't like authoritarianism, right?
+Like the authoritarians can promise you all sorts of cheap goods, but fundamentally you're relying on like three guys in power to like keep you around even though you don't do anything for them.
+And like I just like I get the anthropic things that they're the good guys and you know so far they have made some like I know many people who I like and do think are good people.
+But for the same reason, I believe in democracy, I just like still don't want those like three guys to be controlling my lives and I don't think other people want that either.
+I think what it pushes to is that either it needs to be nationalized or the standard of the frontier of intelligence needs to be more open.
+And I that's why I'm like I think open is better because I don't really trust the American political system with them controlling the AI models that are coming in three years as a single entity to do whatever they want with.
+Like I don't know the US political system doesn't seem ready for that.
+So therefore I think something that's more open and auditable and has a very diffuse notion of control is actually like socially more stable.
+There's there's a lot of.
+You could stack a lot of small risks of AI there like there's all these domains that get more risk when everything is more open.
+But the system seems a better high level.
+Yeah so but base case right like we just had Trump.
+Like he was going to do an executive order than he under the executive order and then he was going to test the models then a week ago he's like I know I don't really even want to test the model.
+So so like think it's reasonable to assume executive branch basically doing nothing on the sort of like you know how this technology is going to roll out.
+Congress I just had senators locking on my podcast I was like what should we do about AI and she tells me about deepfakes and data privacy it's like okay but I'm not sure.
+If that's really what we need here and like this is a good one like on the on the spectrum of like with it senators she's like probably second standard deviation so so the legislative branches in coming.
+It is in coming executive branches in coming over the next three years and then it's like okay so we're just like I think the like.
+I think the like the guy all the way open source is to see the executive bench before us though like they already were forced to did some crazy shit and then they walked it back like who says they don't do more crazy shit and then don't walk it back.
+Yeah I mean I guess I guess like if you're if if what you're as an anthropic employee for is hoping for like the smart nationalization like I think that that path.
+Or just like that the well executed like yeah I don't see that framework.
+Yeah I think it's there's a predictable nationalization to the Chinese AI economy.
+A very predictable path there I don't know what that either well that's kind of like what the path deep seek took you know they have all the state money now.
+And like they decided that that's better than taking you know partnering up with all year.
+It's just like every year there has been a major model step like mythos was a GPT for them like oh one.
+And then you could like twenty twenty five you could be like cloud code agents oh three blah messy messy lineup and then mythos is like we're going to keep going up this ladder.
+It might not be as clear every year but there's clearly big changes still coming that are hard to predict and the models are going to keep getting better.
+That's the world that I think a super going to and people react as it becomes more real which is going to be months for now but like the likelihood the ways that it that doesn't come is like Taiwan getting invaded or maybe a presidential election twenty twenty eight with sufficiently strong running positions.
+But like scary stuff's coming.
+Ethan you want to you want to jump in here I just feel like like the model improvements like aren't that significant and I feel like like people like like massively like overweight like how much like economic like productivity is actually coming from these things.
+Yeah I like like like like just those are two different things I think the bottle gates are extremely significant but the economic productivity takes a long time to diffuse.
+And the people building the models have lied about the immediate gates but that's irrespective of the fact that the models were getting way better.
+Like way better I guess like what how would you how would you measure like them actually like getting better like what is like a what is like a what is like a.
+Measure me and all the AI researchers I use are more I work with are more productive and do all the work through agents and the agents are getting marginally better at each release.
+Like I'm like the output is multiples higher than when chat GPT was released at the amount of work I could do yeah I understand the self reporting that like people I'll say that.
+Like it's just like it feels like if it is the case that so like like how do you make an engineer like more productive right.
+You measure engineering productivity unlike like like how fast does your product improve per unit time per unit energy right per unit dollar that you put in or like the pre in a cost on the engineering side.
+And Anthropic has had cloud code like for much longer than then then you know like to the point where like opening I was even using like cloud code internally right opening employees were.
+And they were a while before cloud was really. Anthropic was truly really trading the cloud models to be good in cloud code like cloud code started as an experiment of what you could do with cloud.
+Oh sure definitely took internal alignment to see that this was a real thing and that's what I posit as the opus 4.5 moment and we're now downstream of that my point is more like like.
+Like cloud code is like not obviously like a better product than like codex and it's like not obviously like a better product than like factory or like cursor or like whatever.
+If you like ignore like the unit economics like part where like they can like subsidize the tokens and as a result like I feel like most of the best engineers are relatively like a wash like for a while between like 4748 and like like like 5.5.
+And like you I feel like like over the course of like a year like you would expect there to be a much bigger delta in like product quality such that like you know nine out of 10 engineers are like all using cloud code over like codex.
+But I feel like for the past like couple months it's been like much closer to like a wash which makes me go like OK like with the AI labs the impression is that they have it.
+And I would expect the AI labs to be the first ones to get it and then I also think that it will take a lot of new organization building to max really extract agents.
+Like me turning my blog interconnects into a company is the sort of company that would show the gates of agents not a company that was built 20 years ago with a old school management philosophy.
+Like I would expect them to not have a high ROI on these AI tools.
+I also think that most of the micro studies that have been done on productivity mostly just reflect that like the way that use the agents makes all the difference in some people are just getting like five times more uplift in the other people because they're better at using agents.
+So the point about like whether like whether the models are comparable one I think that cloud code like is still probably considered the leader and certainly was for you know most the last while.
+And I think that was in part because probably because anthropic was using coding agents to build the next generation and now all the other companies have realized you know that they they have been doing the same thing as well.
+And so you can see them all speed up as speed up to but yeah I don't know my sense is there's been a crisis in every other lab has gone oh shoot we didn't invest enough in coding agents we could have been speeding ourselves up more.
+And now they're doing it and playing catch up but like to me that seems like a consensus that assuming that you use the models well which are like.
+Because there's so much difference in how people use them like and how people use the agents it doesn't always show up in the micro studies but like assuming you do I think that like the uplift on coding in particular does seem pretty clear.
+I mean I just feel like like if it was there you would expect the gap to be widening and if the gap is widening what I would look to is like what are the best engineers like on like Twitter like neutral like let's open source developers what is like like like t3 or like DAX or like some of the people working on open code or like like century.
+Like those like people are saying and it feels like like across the board all of them are kind of just like split between like codex and like like code code and the prior version.
+Codex is also using codex to build codex like I guess like phenomenal yeah but they've gotten so much better in the last.
+Sorry it should be I think and maybe less Ethan like like on the like is it Claude or is it codex but like is it AI agents that are going to be making the the you know.
+I don't know bringing bringing as a productivity revolution you had a piece called Claude code is not making your product better I mean how do you feel about maybe is there like over reliance on this is people substituting it for like actually.
+I think it's out into the world that can make money there are like there's like this frontier of like product quality and then like once you're on that frontier like more engineers does not produce like better product like.
+Yeah the tech industry is going to lay off a ton of people because they can.
+Do that and get away with it with the idea narrative that some of the people that are there going to be way more productive but.
+Like there's so many weird dynamics to go through that aren't just like.
+Slack gets better like Slack's not going to get any better.
+But like then like in the coding world like what how do you measure like improvements in productivity in all life I feel like like almost all the products.
+Like I don't think any of the products are going to get a lot better over the next couple of years I don't think like sales force do you think there will be more products and more features shipped.
+Because I think we're already seeing that and I think that's true.
+I mean if you look at the mobile apps like there's a way more mobile apps but the like used mobile apps like this has basically stayed flat I think that like the.
+The total demand for software and like I'm out of top is more correlated with like how many humans are on the planet how much time they spend looking at computers.
+And like that number is kind of fixed so like it's.
+Do you think that there will also be like it like for the same company to be able to build the same product.
+The coding agents will have no impact on whether or not they need to scale headcount to build the features they want to build.
+I think it has no impact because I think right now like at most companies if you have like 50 engineers three of them are doing all the work and the other 47 are entirely a wash.
+So if you like fired those 47 like the other three are continuing to do all the work and you also would have no impact.
+And you gave those three engineers like like coding agents they would probably like still do all the work.
+Maybe like the time horizons like overall get compressed because there's some there's a lot of like manifesting coming in to play where people.
+If you believe that you can do it faster like people can do it faster there's a lot of confounding factors.
+I'm sure it helps I'm not saying like it helps nothing but I think it helps by a factor of like maybe like 20 20 to 40%.
+That's a lot so this is the thing right like is like I think that's actually a lot first of all like and like I feel like it's it just seems crazy that you're making an argument that coding agents have no effect on engineering productivity.
+Like I agree like I used to be a product manager. I think that like lines of code is not the thing that correlates with product quality.
+It's like ability to make like good product decisions and priorities and whatever and like you need to scale that if you want to keep scaling like your product adoption or whatever.
+So like I get that stuff, but like engineering productivity is a separate thing from like whether or not your product quality improves.
+And it just like seems insane to me to say that like you would not be able to like ship feature to ship the same set of features faster with fewer people.
+Like I just believe that a world with coding agents obviously you can ship the same set of features faster and with fewer people.
+20% improvement is like maybe a lot but like like not when like there's like 95% waste in like the system right.
+If you compare like linear to like Jira right at last thing is probably put like like at least 100 times like more like dollars of like R&D dollars right engineering hours like to work trying to like build like Jira.
+And it's like probably objectively like a worse product.
+And if you like look at that. It's just like like oh so product quality is like entirely uncorrelated with like R&D spend until like then like like you know more more more like faster like like like like like productivity coming from like those core engineers.
+I feel like like most product improvements over time like most features are terrible.
+You probably shouldn't ship 90% of features that you end up shipping 99% of features companies end up shipping.
+And like the core features are really matter come on like these like moments.
+Yeah but you're like empowering like the three people who actually do work so that they're not slowed down by all these people who don't do work.
+I feel like that actually does lead to productivity improvements.
+So I don't know if this is a rabbit hole. It doesn't matter but.
+No I see that like possibly happening but like the the top line impact is like extremely low when they're getting diluted by the other 97.
+Yeah I just think organizations will adopt this is like where I'm with Nathan where I'm like yeah like anytime you have a new technology show up first you
+give every individual the new technology you don't reform the systems you don't reform like the organizational structure whatever.
+So you get a lot of waste and everyone's like not looking at their token budgets.
+But I guess I just expect over the next couple years companies are like somewhat rational and they're gonna figure out the right way to use these things.
+Yeah like why wouldn't the creative destruction happen.
+Why were those 47 people like hired in the first place.
+I mean I guess in my mind it's because like they're there to like placate the egos of like they're like.
+I don't think that's true I think it's because you actually believe that you were getting productivity uplift.
+And then you hire the people and sometimes it's not as high as you want it to be.
+And that sucks but like you like okay like one thing that you know I mean you work at a tech when I worked at a tech company that I saw is like you hire people.
+Some of them are definitely 10x as more productive than the other people who are there.
+But in a world with AI maybe you don't need to have as many of those like low productivity engineers.
+And so by giving the PMs or the senior engineers that actually productive people coding agents.
+Then when the like low productivity engineers quit then you don't have to backfill them as fast.
+And like that's to me how the organization gets leaner and get smaller.
+Yeah I guess I just feel like like the those people that was always the case.
+Those people never needed to be there and like the fact that they were there is like.
+Is like like whether or not they needed to be there is not changed by AI at all.
+And as a result like you know the thing that needs to change is do your managers feel like they no longer tie their egos to the number of people reporting to them.
+And now they tie their egos to like the total like token budget or something that they get the set on fire.
+I mean it's like both both sides you're like an equally irrational like thing.
+This is why it takes a decade.
+Like it's not a year thing that's going to go a year like I think a traffic might not fulfill there.
+Whatever 40 or a hundred billion are goals this year.
+I think they might because the models get better like I think that.
+Cloud Fable will be an economically very successful model for them based on an early evolves and stuff.
+It doesn't work for everybody.
+But I think like.
+Models getting like there's certain domains where the.
+Rewards to frontier intelligence is really high and people pay for those tokens.
+But a lot of people that are trying the tokens won't.
+We'll just kind of stop and it's like there's two different lines there.
+And they're both reported in anthropics rapid air or growth.
+Yeah, I guess I feel like the second line is like like 95% of it's in as a result like the.
+And like if the top line but the first line doesn't start growing after like you kind of run into trouble.
+I think like with the current AR that they're at and like the growth that they're at like they're looking at like something like one to two percent of like engineering salaries.
+And like North America.
+But that's like.
+That's that's coming up on like basically 10% of like total IT budgets for like the CIO.
+So like fortune five unit companies.
+You can get to like 10% in a given year and like that's like okay.
+Like they're not going to like immediate like the CFO is not going to wake up and like beat the shit out of you.
+But if you get to like 20 and like 30 and then for like going from like 10 to.
+You go for like like 0.1 to one one to 10 and the whole time you're like I'm growing 10 acts every year.
+But like going from 10 to 100 and like doubling this IT budgets is like.
+Did you see the Citadel securities note on this today?
+I feel like it's a somewhat similar argument, but it's pretty well put together.
+What did it say?
+Oh, throughout the read it.
+Kind of shares.
+Kind of shares.
+That might be easier.
+What is the what is it?
+It's pretty long.
+It's like a feedback.
+It's essentially saying the same thing.
+It's like a very professional way of saying that like the top end of tokens.
+The people who are getting value out of them are minority.
+And they're getting.
+He kind of depressive pressure on entropics revenue because so many people are getting ROI.
+Yeah, but then also like human capital like like people's ability to get value of agents will also increase.
+So like yes, people will realize that some of the tokens are being wasted at the same time.
+Everyone will get better at using tokens at the same time.
+Like if you give an advanced software to a boomer who doesn't know how to use it.
+They're probably not going to get very much value over out of it.
+But eventually people just like train themselves to do better things.
+I mean, I think the difference between me and Ethan is like I think that firms are like slightly more rational.
+Like I think that some jobs are bullshit.
+But like I think that like not all the jobs are bullshit.
+And like actually people are hired not only for ego reasons.
+I think sometimes you hire people because you want them to do work and expect they will do work.
+And I don't know.
+I mean one metric that I'm like pretty interested in in watching both like in firms over the next few years.
+And I'm sure there are people tracking this is like how does you know token and AI spend compare with head count spend.
+And like what are the rates that token spend and head count spend are like growing?
+And so do we actually see that firms are reallocating head count spend to token spend or something like that?
+That would be really interesting to track.
+I probably like that you're probably right on the Delta.
+I think that like if people like reallocate like head count spend to token spend.
+I just.
+Although I would probably end up seeing that as like like basically equally unproductive because like I'm or like it's sustainable.
+The only thing I really care about is this sustainable.
+If the CFO and CIO feel like you know I should be spending.
+I'm going to go from like spending like 60% I had count of like my total IT budget to like 30% and I put that 30% into that tokens.
+That's actually totally sustainable.
+I'd say like that whole class of like spend is probably like like a better company like Coca Cola.
+It's kind of like paracidically sitting on top of like the actual like sale of coke.
+And like the profit margins that like could be like otherwise returned to like public shareholders.
+But I mean you want to believe that like intelligence like actually helps you sell more coke.
+How do you feel about open models and price compression?
+It seems like you think most of this is fake that if it was TEDx cheaper it would also be zero because it's like not real work.
+I mean like it's well I think it's like fake the same way that like the like value of like Louis Vuitton is like not the actual like crafts of like the thing.
+And it's mostly the signaling value and the brand and the perception of like that it's like valuable.
+And like the same way like people spending a lot of money on tokens could like produce like all that costs.
+And like so if somebody like I could see a world where like a CEO would pay McKinsey like a million dollars for a slide.
+If like the McKinsey like partner says listen I spent like $400,000 worth of tokens on this.
+And like maybe maybe those tokens are spent on a for loop like like going like like really dumb like hypotheses.
+But like I'd see a world where like if you front the costly signaling like you end up like getting there.
+And I'd say the same as the case with like open models.
+Yeah like like right now I think like most of the spend on outside of like table which seems to be like a genuine step up.
+Like most of the like delta between like you know people spending on like coding models and stuff.
+And like open source models is like that was mostly like a sense of brand.
+And you feel like anthropic is a better brand around like coding.
+What do you personally use these bottles for?
+Mostly communicating ideas and like making like pretty charts.
+Cause I feel like that's like a pretty low like they've been able to do that for a while.
+And it's not like it's a high I even think that's a pretty productive use case of them.
+And if they're very useful at it. But I think it's not like as much of a potential unlock.
+It's like having an intern that I would make a plot for you.
+I got Jordan does all this vibe coding and I'm like Jordan you got to do something that's like building progressively like vibe coding is like tartishing the AI industry.
+Nobody wants another app.
+You know what I got you know what I got I got a quad downgraded from fable to obis 4.84.
+I made it.
+I made it make a trailer of my you know death of Stalin but it's now movie.
+It was like we can't trust you with fable for that.
+My animated John Qing had to be you know an older model.
+All right.
+And what should I build what what what actual software should I create for example like I built a data API for interconnects.
+Cause we screw up hugging face to get all the downloads data.
+Now I have an API where I can I use it myself or could give it to a researcher to query like model data over time for any important language model.
+And we have the backflow of data and we create our internal like a valve metrics like I did this like relative adoption metric and knowledge and API where the student could query it for any model automatically.
+Adjusts the numbers every quarter based on stuff stuff and it's like I just built this is like what would be like a weekend day.
+I like that now exists and it's like a research tool that doesn't exist in the world for understanding open models.
+I just like tried to build out institutional expertise based around by like very very cutting edge knowledge.
+And I don't know what exactly that research is for try to talk.
+Yeah.
+There are two that I'm working towards.
+I mean one is just like the the Chinese language news ingestion.
+But it gets really frustrating because like, you know, the model like these like Xiao Hongshu and and we chatter kind of clothes and like you can sort of get the.
+Do you follow me on the screen should know.
+Sorry.
+The other one which I'm more excited about and stay tuned is creating and like maintaining an evil suite for like policy and national security.
+So I don't know what that actually is going to look like yet.
+We're going to have a essay contest with a big prize number attached of like proposing benchmarks for like how useful these models are to like legislators and staffers and war planners.
+But anyways, TBD I think that will actually be real software that can save the world TBD.
+Jazz, we want to talk about the kids.
+Oh sure.
+Well, I mean, I'm like curious what everyone thinks I so I've been thinking about for the past month or so all the booing at college commencement.
+Like anytime a commencement speaker says AI then everyone booze and you know that's not totally rational.
+I think kids just boo because they're kids.
+But also, you know, the youth are worried about their future. They're worried about inequality. They're worried about affordability.
+They worried about getting a job. They think that they the AI companies and the government and everyone screwing them over.
+And it feels very pessimistic and so I was thinking about, you know, what would I tell a 22 year old who is worried about the future and worried about their resilience.
+And ability to get a job. And at first I started asking just like a lot of my friends and people I knew mostly tech people but also other people.
+And one thing is I noticed a lot of fatalism.
+So the most AGI-pilled friends I have would usually just say like, oh, they're screwed. They're doomed.
+Like, I have no advice for the 22 year olds. They're totally fucked. They should be scared.
+And I was like, wow, I don't like that very much.
+And so I was like, how do I what kind of advice both like reckons with the fact that the future will be different and change a lot.
+And maybe scary in some ways, but also is like somewhat practical.
+And so yeah, so I wrote a post and I was like, I think it was like make friends like be very flexible about your identity and get good at like, you know, getting new jobs and don't tie your identity too strongly to like being at one firm forever.
+Develop tacit knowledge.
+Don't like bet on doing desk work forever at a computer.
+Like don't de-skill yourself with AI. Don't make yourself stupid because then you'll totally be a commodity and no one would ever hire you over an agent.
+But I want to know what you guys would tell a 22 year old right now. So that's what I'm curious about.
+I feel like my it's pretty similar.
+It's like, mostly giving people conditions where they will stumble into a idea of a micro business and get excited about something and thinking about me in a business
+and becoming less reliant or having less expectations of the existing career ladders.
+Yeah, it's like I don't know that people have framework young people are provided frameworks for like starting businesses, especially like like businesses that are profitable, but are not venture backed businesses.
+Like I don't know. I don't know that college prepares people for that. Maybe it does these days.
+I don't think it does. My impression is that since I was in college, it's become even more like expectation.
+Where you like want to get it at your level, see us.
+Yeah, and I'm like, those are going away.
+Yeah.
+That's why you want to tell the kids.
+Ethan, what do you want to tell the kids?
+Oh, sorry, I didn't hear that. I remember you said probably go to church, find God and touch grass.
+I was trying to think about the things that are probably underpriced right now.
+I feel like I feel like I feel like time of fatalism. It's more correlated with the hell I spent too much time online and reading the headlines than anything else.
+And yeah, just relationships in the real world are like real things.
+And I think that at least in the spaces that I spent a lot of time doing like remote stuff.
+I spent a lot of time doing real life stuff in like customer's offices.
+I really wish I'd spend more time. Or like at all points, if I could like dial up the number of things I do in other people's offices and not like remote, I would do it.
+And probably includes the park and everything else.
+And so yeah, I think people who are like probably going outside and they see a lot of sunlight.
+I probably don't feel as much fatalism and so.
+Ethan, what Bible characters best capture various AI players today?
+You muted yourself. You muted yourself.
+I'm not religious at all. I don't follow my own advice.
+So why are you telling other people to go to church if you're not doing it?
+I think that I end up like I have a very, very like a quasi like I behave like a religious person in terms of like how much I have like non nihilistic like groundings and like very arbitrary and like like subjective like values.
+I just like feel like like good or good.
+But generally like I feel like a lot of the like like being being like directionless comes from like not having that.
+What are your values?
+Do right by the people around you and then have fun mostly.
+See I think those are good values.
+I think those are good values. And like I also my thing I was like you got to like get better at having fun party more whatever.
+But I don't think you should tell people to go to church if you're not going to church.
+Like I think that there's in a that creates an assumption that like you know that church is going to be the thing to instill whatever these values are.
+Again, I'm not sure that church will teach them to have more fun or whatever.
+And like it feels like kind of retrograde.
+Like some people should go to church, but like I don't know recommend the stuff that you actually do do.
+I think if you go to church, don't stop.
+I think people that have a community in church can end up happier.
+But it's for sure. I'm anti church.
+I'm anti people giving advice that they do not follow.
+Yeah, I was just giving I was just figuring out a way to fix an advice.
+I feel like the so like I used to I used to say like like works super hard on stuff.
+And like whatever I try to like do stuff that like I more closely stuff I identify with.
+But I feel like I've got the extremely weird like out of distribution like brain.
+I also like can't like give the advice like go to like go to a decent or like like I use the word privilege or whatever.
+But I can't give the advice like go to a decent school.
+Get yourself in a position where you can like raise like venture funding like do like bunch of crazy shit in like New York or one of the big cities.
+I feel like like a lot of the like like nihilism like comes from places where like you don't have as much opportunity.
+Meaning people like where they're out there. It's being like like there's a lot of like like.
+If you don't naturally like go or just work of no.
+If you don't like fortunately find yourself in a situation where you have like like all the like privilege on the planet.
+Like you know what have been pretty funny.
+So we in the past two days we've gotten open a eyes like economic plan for America.
+And I think anthropics one came out this afternoon. I have not read it yet.
+Like if like we start getting the frontier model labs being like actually the only thing that's going to save a save you is like your belief in God.
+In your in your church community.
+So when when we're really when we're really out of ideas.
+And you see Silicon Valley explicitly pushing.
+You know monotheism.
+Or maybe not monotheism TV.
+I think long term. It's just the near term that I worry about getting to it.
+Plenty of good possible equilibrials but getting there is hard.
+So I think if it's like in 10 to 15 years and like classic arts and sciences, educations are more popular.
+And it's like writing classes.
+Mostly telling people to go explore things and then once they have found a topic they're interested in.
+Some of them learn to write about it and like all the education system is more built around building curiosity and buildings somehow figure out how to make status around this.
+And then like rather versus the CS undergrad which is like your status is you're going to get it 300 to 400 K job right out of college.
+So like if the stat you figure out the way to change society.
+So that status is around critical thinking and like being an independent brain that has thoughts on the table.
+Then I think like these people are going to be well suited for extracting value from AI.
+It's like AI is the tool that just lets you run with this and you don't need to be in some random place in the world to do it.
+But I can't give this as advice to a student.
+It's like I can't tell them this because that's like.
+You can't wait like waiting for the world to change his horrible advice.
+Jordan, what would you say?
+I feel like I feel like we've done my riff already on model talk which just basically start a sub star and see where it takes you.
+So true.
+I was I was trying to find something I disagreed with in your article and I really couldn't but like look we're on a very weird plane.
+And I think it's of like kind of being like solopreneurs and I don't.
+Look, that was what the economy looked like in like 1860 is like most people just like ran their own farms or like sewed socks or made leather goods for their town.
+Am I sure that that's where this whole technological change is going to lead us?
+I don't know.
+And I think there's going to be mass collapse of capital and the biggest companies are going to get bigger.
+So like there's still going to be people at these companies.
+We're not going to replace them by AI in the next.
+Like is Google going to be a AI only company in 20 years?
+I like absolutely.
+I don't think so.
+Okay.
+Oh, like you might AI only as a no humans employed.
+Yeah.
+Like there's still going to be humans there.
+I think there'll be fewer but I think there will be people.
+I think fewer people but I think people.
+I mean, yeah, I think like my like concrete advice.
+If you don't want to like be high agency or a solopreneur or whatever is to tell people like get a job in something that is going to grow with the AI economy.
+So it can be at an AI lab.
+If you hate AI, it can be an AI policy and you can try to like ban the data centers.
+Like I bet there's going to be a lot more jobs in both data center construction and data center banning over the next few years.
+So those are some good opportunities.
+You can get a job in healthcare.
+You can get a job in the public sector that you can get a job in a unionized trade.
+So like those are my things.
+If someone just like wants me to like list some jobs at them and like not tell them to like be a solopreneur.
+But I also tend to believe that like I actually find it like slightly annoying that I think a lot of people in my circles will be like.
+Oh, yeah, like among my friends, I tell everyone to like be high agency.
+But like when I talk to normal normal people, they should just like give up and find God because like they probably can't like figure it out.
+Like I don't know, I think I just have more faith in normal people.
+And I think that people would want to receive similar kinds of advice.
+I mean, they have options.
+You can choose the path that makes the most sense for you.
+But I think a lot of people can start small businesses because that's what a lot of people have always done.
+I think more people want to start small businesses than are currently doing so right now.
+And if they realize that one thing that I allows you to do is it might privilege small businesses in a bunch of ways if you're like smart about the agent stuff.
+Then I, you know, I think that's a good thing and people should know that those are good options too.
+Close on my data center riff.
+Go for it.
+So there's been this like arc of both legitimate sort of investigation into Chinese influence operations like pushing out like tweets that have gotten literally zero like saying.
+Like data centers are bad.
+You shouldn't build them as well as some like corporate dark money funding, like really not good research that is saying.
+Oh, yeah, it's like China that's making people not like data centers.
+This is ridiculous.
+I'm sorry.
+Like it is an interesting fact that, you know, there's someone in the Chinese deep state, which is decided to like push this out into the, you know,
+to try to like glob on to this, but trying to sort of smear AI data center opposition as like a communist plot is like completely missing the point.
+And the most sort of absurd part of all of this is that it would be so easy for these hyper scalers to solve their local problems with money.
+I mean, like what if you, okay, spend all the money to make the data center silent, which like I think is like a hundred million dollars.
+So Fable tells me if you be like offer to double, you know, the counties school district budget and put like real money into it for 20 years.
+I think all of those people will flip and by the way, my favorite proposal, which I think will really get all of the sort of like community activists on board is I would like to have like a platform on top of the data center once we like silence it and like have security or whatever, where you just create pickle ball courts on top of the data centers.
+And then it's like a happy part of the community, you can have mile Lynn, like do this sort of like layout right so it can look like storm king and you know have like wavy grass just like make these look sort of like beautiful and innocuous civic buildings that have like recreation facilities attached.
+And you, you know, improve the school systems and all the sudden everyone's going to be you know clamoring for data centers in there in their in their backyard.
+So this is like I think an entirely fake problem one that like money can and should solve these companies are cheap it's embarrassing that they're being cheap like you've seen these like pledges to make sure the electricity isn't go up.
+But it's like okay, we can do that we can make sure the water prices don't go up, we can take the sound away and we can let us like you know do data center you be on as Ben Thompson.
+Yeah, they need to say like Carnegie shit, you know, like make the park like really nice.
+Yeah, like where's the sales force park of data centers.
+Yeah, but yeah, it's like okay, like don't raise electricity prices. What if you cut them all by half?
+Would everyone like the data centers more if you cut all the electricity prices by half the whole electricity man.
+Yeah, pay that make it free. I think if it's free everyone will be pro data centers.
+If you have that much money, you need the data center that bad, then like just do it. Everyone will be happy. It's going to be okay.
+It's so simple. It almost makes me think that this is a fake problem.
+But I know it's not but like it makes me think that the data center opposition isn't isn't even real if they're not willing to put an extra like $150 million.
+I think they literally just haven't tried that hard. I think they like are because it takes time to do community engagement and to like have these meetings.
+And I my very vague sense of it is that the people who are in charge of the data center expansion just like have not spent the time and didn't really feel like spending the time to do the annoying community engagement process.
+We're like you meet with the city and agree on what meeting with the city but it's not but the community engagement.
+It's like okay, you can say nice things but like the meetings don't matter if the money isn't behind it.
+Like if you just 10x you're like bribe, then like everyone's going to be happy with it.
+Yeah, but I think it even takes time to like set up the meeting where you agree on what the bribe is where you agree on like is electricity is at the park is at school.
+And I think that the people doing the data center build up just never spent any time on that.
+And I think that they could spend time on that and they probably will starting probably a month ago when they realize this is a big problem for them.
+But historically, I don't think they really devoted time to solving this problem.
+Like a lot of the issues are on transparency like a lot of the people who are mad at the data centers. It's also because the data centers were under like a name like project flow or like project tempo.
+Like they would they wouldn't people wouldn't know is a data center project and it wouldn't come up in the town hall meetings until very very late.
+And so the community opposition would like really fire up kind of at the last minute as opposed to like a slightly more extended process.
+And it's just because there's such a rush to build and people haven't cared but yeah, I agree that it's solvable.
+You just need to do like a tiny bit more community engagement and the community engagement should in fact result in like nice public goods for everybody.
+But yeah, the China narrative is really funny.
+It would be nice to have more non crazy reporting on what is happening at these discussions over time and like how are these discussions changing.
+Because who's advocate is it like some construction agency contracted by Google ended up going to this local council and getting mobbed by the locals and they're just kind of like shit.
+Oh, they're like I don't know what to do.
+The local politicians will make a deal with the data centers because the local policy people want tax revenue and so they actually want the data centers.
+And so, but then the both parties will underestimate the public backlash.
+And then once the public finds out, then they start calling storming the town halls, mounting local opposition.
+I mean, I don't have like an extremely deep understanding, but that's my sense of how it happens a lot of the time is that the policy and politics conversation are quite different because data centers do tend to increase tax revenue.
+But I told Jordan this, I'm going to go on a data centers road trip next month where I go to some data center towns and like I don't know Wisconsin or something and ask people why they hate the data centers or maybe they like them.
+Yeah, I just be, you know, the sort of economic utility of a data center, I think is something that I would imagine the local politicians don't quite
+rock is like how much money are these tokens going to be like are these data centers going to be printing over a 10 year horizon.
+And like the I wouldn't be surprised if kind of like that, like whatever tax incentive, like whatever tax abatements they're giving is just not is like commensurate with like, oh, this could be like a poultry like processing facility, not like this is, you know, like the most valuable real estate on the planet.
+Like you actually have a lot more leverage. So yeah, like having a 5% bump in like your local school and police budget is not something that people are going to feel in a way that like, you know, crazy doubling, you know, crazy headlines like, okay, everyone gets free electricity or everyone, you know, we're having, we're giving, we're, we're hiring twice as many teachers.
+I think Zaron can solve this problem. I think if you gave Zaron this problem, he would figure out the deal to make like it would be like the like Trump new housing like type of thing like you need like a cons genius to figure this out too.
+You know who's not a cons genius? Who is these Chinese influencers that are being paid by like provincial governments, you know, I did a big report five years ago.
+This was my like COVID project. I taught myself data science and because Twitter had released all these like like the raw data of all the state backed bot networks.
+And you could go through them and like you see how many likes they get like they all got no likes you see like you can read what the text was like the none of them were funny or relevant or good.
+And I ended that article five years ago being like maybe when these, you know, when these state backed organizations get access to something like GPT three, then they'll really be able to sort of like crack the nut of overseas influence operations and the open AI caught some folks doing basically the same thing around data centers and like not liking open AI.
+And they were from China. And they were still really bad. It's like it didn't it doesn't quite like even with the tools today, even with frontier model access today, you can't kind of get past the sort of like okay, I'm like a 24 year old and like Hangzhou, I've never lived in the US. I don't speak native English like like it still is hard even with these tools to actually make something which is like compelling and persuasive to an audience which isn't your own or maybe these are just like
+the bums that are, you know, too lazy to like actually do a good job and they're just trying to, you know, fill some KPIs or something, but I was I was struck at how
+mailed in the examples of, you know, data center, Chinese influence operations actually were
+Yeah, I mean, maybe that's why our jobs are so a GI proof we can do authentic non-astroturf data center influence operations from our purchase as massive online influence service.
+My job is secure because I'm the only one that's allowed to do AI research out of a frontier lab, but therefore I'm going to be okay.
+All right, cool. What else are you talking about?
+Wait, I'll kind of read a tweet. It's so good. So Joanne, Jane, formerly did the character at OpenAI now at Coronos tweeted kind of crazy that someone's full-time job was a steer
+clawed to sabotage ML research capabilities with paying customers. It's so good. It's like somebody had to do this for their job or they made
+a clawed to it, but somebody told clawed to do it. It's like, it's just so crazy to be. I don't why is it? Look, the, the, the White House, Crazios, OSTP writes a letter saying we need the models to do a better job of stopping China from distilling models, right?
+And like, I would assume it like, yes, okay, so that's reason number one reason number two, you don't want OpenAI stealing your secret sauce.
+I mean, it kind of makes sense, right? Like, I guess like there's like, okay, if you are a private company and you want to like maintain your edge setting aside all the safety stuff.
+Like, you know, access to this for like, like, no, there's no rule that they need to serve every single customer.
+Yeah. Yeah, they just did it under the guise of that word and intelligence explosion and they need to be safe. Yeah, I mean, there's a, there's like this text in a group chat.
+I'm in that. Oh, I'll read out without a name, chat, I'm house, I guess that's being anthropic talk about AI safety feels like Apple talking about privacy.
+They may truly believe in value with the value what they are saying. It is also the strategically ruthless thing to do.
+And I think that's true. Yeah, I think it is like, I'll talk about privacy. That's fair. Yeah, there's so much like Apple in my opinion.
+Yeah. So, but I like Apple. So, uh, what's up?
+So are you going to keep using cloud?
+I haven't fully decided. I didn't even go in full Siri. I almost canceled it. I almost canceled it. I'm going to see how strict the
+the filter is. And if I'm like really hitting the filter, I'm like, yeah, I'm done. But I'm definitely hoping that OpenAI gets better at the things that clouds better at is like editorial and book.
+And like, I'm writing, like, I'm just writing math equations and understanding intent when I'm making a slide deck.
+And a lot of this like soft skill agent stuff. But codex is already very good, especially in anything technical and like code heavy.
+So I'm really hoping that like GPT 6 comes out and it is just like a bit more of a saffon in terms of design and user intent. And I know it happily switch.
+Yeah. I think 55 is a good model. I actually like I'm not changing any of my behavior based on this. However, I already use chat GPT much more than I use cloud, which makes me an outlier.
+I feel like all the people I know because cloud is a God awful researcher. And I keep telling everybody this.
+Like if you give it a research task that requires a lot of web search, chat GPT will be clawed and basically every evil I've tried. I've sent them to the Anthropic team to be like, yeah, you're shit together guys. Like this stuff doesn't work.
+But like, yeah, I think 55 is good model. It's like less sick of Antic. I think then I mean, I haven't tested fable enough. But it's less sick of Antic than Opus was. It gives more detailed responses. It is better at research.
+It is worse at editorial. So I guess like, you know, and so far as I like want some feedback on an essay structure, I would still go for cloud at that case. But like 55 is my daily driver and has been and I think it's a good model.
+And I think that actually it's underrated in like SFE type circles because it's like not cool to be into open AI, but actually it's a good model.
+Yeah, I think it's my like book workflows. So I have a workflow where I drop a chapter of my book and I'm like, make this into a lecture based on the style of my previous six lectures on the topic and open AI is horrible.
+But cloud is like pretty good. Like I had it made like a 15 slide thing and I was like, I need to get these models and find this figure in their paper for their post trading recipe and put it side by side in my custom slide tool.
+With the summary of the recipe and put them in this order and cloud kind does it. I have to be like one round of feedback on the slides that it's ready. But opening I was crap at it.
+But what's up with this project? I'm going to go work with not use cloud anymore.
+You know what's ridiculous is like they're promising me RSI and you know superhuman cyber attacks and that like you know zero days that no one's ever seen.
+And it's still can't really help me take an outline and turn it into an article.
+Like whoa, it's not that hard. I don't think I have the same, you know, I don't think what I'm trying to do there is as hard as like solving, you know, an aeros problem.
+But they're not trying to make it do the thing.
+No, they just don't care.
+Okay, if you can have one guy like take like deal with, you know, not let Nathan do his AI research.
+Can we have another guy to help me write my own articles?
+Yeah.
+Actually, there might be like a galaxy brain thing going on where one strategy to AGI pill the media immediately would just be to create a strike force to make these things extremely good at writing articles.
+And then the media would be instantly AGI pill.
+The fact that AI is bad at writing has like really disproportionate impact on what the chattering class thinks about AI capabilities.
+So there's an argument they should just like improve them on that access for the sake of the public even understanding because right now the chattering class is like this of a shit like you can't do anything.
+Sounds right.
+Yeah, but I also like having a job and so, you know, I don't mind.
+They're so employable.
+We've already discussed this at length from the podcast.
+Yeah, I like my job being right.
+That's the thing.
+And people will read your writing anyways.
+You just have to do your own voiceovers.
+No one's going to read my post.
+They're all going to listen to me doing voiceovers.
+And I don't like it.
+But I thought about doing a voiceover for the graduation one because it's like, oh, it's like commencement speech theme.
+Maybe I should do one, but it seems so cringe.
+Like then it really you're like trying too hard to give a speech.
+And it wasn't written as a speech is written as a blog post.
+And so I don't know.
+But yeah, I think you should have, I think you should have done the whole thing like like stand up and wear it down.
+Post on YouTube.
+God, that'd be so mortifying.
+You can do it right now.
+We can boo you.
+No, no.
+All right, let's end it there.
+Okay.
+Thanks, everyone.
+Good model talk guys.
+Good model talk.
+Talk, talk.
+We'll get more fights with guests next time.
+Okay.
