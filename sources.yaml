@@ -42,6 +42,42 @@ sources:
     tags: [ai]
     priority: high
 
+  # ---- imported from the Community Repo -----------------------------------
+  # Listed there as Spotify links; each is resolved to its open RSS feed.
+  # Tags mirror that repo's categories.
+
+  - podcast: "The Macro Trading Floor"
+    tags: [macro, trading]
+
+  # Pinned: the name "Capital Allocators" also matches the spinoff show
+  # "Private Equity Deals with Capital Allocators" (dormant since Jan 2025).
+  - rss: "https://rss.libsyn.com/shows/94820/destinations/482814.xml"
+    name: "Capital Allocators"
+    tags: [hedge-funds, allocators]
+
+  - podcast: "Pitch The PM"
+    tags: [hedge-funds, stock-pitches]
+
+  - podcast: "ChinaTalk"
+    tags: [geopolitics, semiconductors]
+
+  - podcast: "SemiAnalysis Weekly"
+    tags: [ai, semiconductors]
+    priority: high
+
+  # Pinned: "Generating Alpha" fuzzy-matches the unrelated "Generation Alpha".
+  - rss: "https://anchor.fm/s/e79435d0/podcast/rss"
+    name: "Generating Alpha"
+    tags: [investing, interviews]
+
+  - podcast: "Odds on Open"
+    tags: [hedge-funds, interviews]
+
+  # Semiconductor Leadership Podcast (SLP) — in the Community Repo, but it is
+  # not in Apple's directory and has no open RSS feed, so it cannot be pulled.
+  # Checked 2026-07-22 against iTunes Search. Spotify-only; see README.
+  # - spotify: "https://open.spotify.com/show/0DqFUSInRYancx6JimkIbB"
+
   # Explicit RSS is the most reliable form — no lookup step, never ambiguous.
   # - rss: "https://feeds.megaphone.fm/example"
   #   name: "Some Show"

@@ -78,16 +78,37 @@ def resolve_podcast_name(name: str, *, session: requests.Session) -> str:
             f"Fix: search podcasts.apple.com, then use an explicit `rss:` entry."
         )
 
+    # An exact title match always wins. Without this, fuzzy scoring happily
+    # picks a spinoff or a similarly-named unrelated show — e.g. "Capital
+    # Allocators" matching "Private Equity Deals with Capital Allocators", or
+    # "Generating Alpha" matching "Generation Alpha". Both are dormant feeds,
+    # so the failure is silent: you just get zero episodes forever.
+    exact = [x for x in results if _norm(x.get("collectionName", "")) == _norm(name)]
+    if exact:
+        best = max(exact, key=lambda x: x.get("trackCount") or 0)
+        log.info('resolved "%s" -> "%s" (exact)', name, best.get("collectionName"))
+        return best["feedUrl"]
+
     best = max(results, key=lambda x: _similarity(name, x.get("collectionName", "")))
-    score = _similarity(name, best.get("collectionName", ""))
+    matched = best.get("collectionName", "")
+    score = _similarity(name, matched)
     if score < MATCH_THRESHOLD:
         options = ", ".join(f'"{x.get("collectionName")}"' for x in results[:4])
         raise ResolutionError(
-            f'No confident match for "{name}" (best: "{best.get("collectionName")}"). '
+            f'No confident match for "{name}" (best: "{matched}"). '
             f"Did you mean one of: {options}? Or use an explicit `rss:` entry."
         )
 
-    log.info('resolved "%s" -> "%s"', name, best.get("collectionName"))
+    # Inexact but above threshold: usable, yet the exact cases above show this
+    # is precisely where wrong shows sneak in. Say so loudly instead of
+    # resolving silently.
+    log.warning(
+        'inexact match: "%s" -> "%s" (%.0f%%). Verify this is the right show; '
+        "pin it with an explicit `rss:` entry if not.",
+        name,
+        matched,
+        score * 100,
+    )
     return best["feedUrl"]
 
 
